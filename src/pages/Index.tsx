@@ -201,8 +201,8 @@ const Index = () => {
                     variant="outline"
                     className="bg-gradient-to-r from-red-500 to-pink-600 text-white hover:from-red-600 hover:to-pink-700 border-0 shadow-lg hover:shadow-xl transition-all duration-300"
                   >
-                    <Icon name="Hearts" className="w-4 h-4 mr-2" />
-                    Экспорт PDF
+                    💕
+                    Тест на верность
                   </Button>
                   <Button
                     onClick={() => setActiveTab('settings')}
@@ -278,9 +278,17 @@ const Index = () => {
                 </div>
 
                 <div className="text-center">
-                  <p className="text-gray-700 mb-4 font-medium">
-                    💬 Напиши в ВК: "Мини-проверка: №1,2" и получи результат!
-                  </p>
+                  <div className="bg-gradient-to-r from-yellow-50 to-orange-100 border-2 border-yellow-400 rounded-xl p-4 mb-6">
+                    <p className="text-orange-800 text-lg font-bold text-center mb-2">
+                      📩 КАК ПОЛУЧИТЬ БЕСПЛАТНУЮ МИНИ-ПРОВЕРКУ:
+                    </p>
+                    <p className="text-orange-900 text-base font-semibold text-center">
+                      Напиши нам: <span className="bg-yellow-200 px-2 py-1 rounded font-mono">"Привет! Хочу мини-проверку: услуги №3,5"</span>
+                    </p>
+                    <p className="text-orange-700 text-sm text-center mt-2">
+                      Просто укажи номера любых 2-х услуг из списка выше и мы проведем проверку бесплатно!
+                    </p>
+                  </div>
                   
                   {/* Яркая привлекательная кнопка-ссылка */}
                   <div className="relative group">
@@ -292,20 +300,42 @@ const Index = () => {
                       className="relative block"
                     >
                       <Button
-                        className="relative bg-gradient-to-r from-pink-500 via-red-500 to-purple-600 hover:from-pink-600 hover:via-red-600 hover:to-purple-700 text-white px-12 py-4 text-xl font-bold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 rounded-2xl border-0 w-full sm:w-auto"
+                        className="relative bg-gradient-to-r from-pink-500 via-red-500 to-purple-600 hover:from-pink-600 hover:via-red-600 hover:to-purple-700 text-white px-16 py-6 text-2xl font-bold shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 rounded-2xl border-0 w-full sm:w-auto"
                       >
                         <span className="flex items-center justify-center gap-3">
-                          <Icon name="MessageCircle" className="w-6 h-6" />
-                          🚀 УЗНАТЬ ПРАВДУ СЕЙЧАС! 🚀
-                          <Icon name="ExternalLink" className="w-6 h-6" />
+                          <Icon name="MousePointer" className="w-6 h-6" />
+                          👆 НАЖМИ ЗДЕСЬ ЧТОБЫ УЗНАТЬ ПРАВДУ СЕЙЧАС! 👆
+                          <Icon name="Heart" className="w-6 h-6" />
                         </span>
                       </Button>
                     </a>
                   </div>
                   
-                  <p className="text-sm text-gray-600 mt-3 font-medium">
-                    ⭐ Более 10,000 довольных клиентов уже узнали правду!
-                  </p>
+                  <div className="mt-6 space-y-3">
+                    <div className="bg-gradient-to-r from-purple-100 to-pink-100 rounded-lg p-3 border border-purple-300">
+                      <p className="text-purple-800 font-bold text-center flex items-center justify-center gap-2">
+                        <Icon name="Users" className="w-5 h-5" />
+                        🌐 Наше сообщество ВК:
+                      </p>
+                      <a href="https://vk.com/vernostpro" target="_blank" rel="noopener noreferrer" 
+                         className="text-blue-600 hover:text-blue-800 font-semibold text-center block mt-1">
+                        vk.com/vernostpro
+                      </a>
+                    </div>
+                    <div className="bg-gradient-to-r from-blue-100 to-indigo-100 rounded-lg p-3 border border-blue-300">
+                      <p className="text-blue-800 font-bold text-center flex items-center justify-center gap-2">
+                        <Icon name="Globe" className="w-5 h-5" />
+                        🔗 Официальный сайт:
+                      </p>
+                      <a href="https://vk.link/vernostpro" target="_blank" rel="noopener noreferrer" 
+                         className="text-blue-600 hover:text-blue-800 font-semibold text-center block mt-1">
+                        vk.link/vernostpro
+                      </a>
+                    </div>
+                    <p className="text-sm text-gray-600 font-medium text-center pt-2">
+                      ⭐ Более 10,000 довольных клиентов уже узнали правду!
+                    </p>
+                  </div>
                 </div>
               </CardContent>
             </Card>
