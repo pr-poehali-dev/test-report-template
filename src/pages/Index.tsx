@@ -278,36 +278,117 @@ const Index = () => {
                 </div>
 
                 <div className="text-center">
-                  <div className="bg-gradient-to-r from-yellow-50 to-orange-100 border-2 border-yellow-400 rounded-xl p-4 mb-6">
-                    <p className="text-orange-800 text-lg font-bold text-center mb-2">
-                      📩 КАК ПОЛУЧИТЬ БЕСПЛАТНУЮ МИНИ-ПРОВЕРКУ:
-                    </p>
-                    <p className="text-orange-900 text-base font-semibold text-center">
-                      Напиши нам в сообществе ВК: <span className="bg-yellow-200 px-2 py-1 rounded font-mono">"Привет! Хочу мини-проверку: услуги №3,5"</span>
-                    </p>
-                    <p className="text-orange-700 text-sm text-center mt-2">
-                      Просто укажи номера любых 2-х услуг из списка выше и мы проведем проверку бесплатно!
-                    </p>
-                  </div>
-                  
-                  {/* Блок с индивидуальным промокодом */}
-                  <div className="bg-gradient-to-r from-green-100 via-yellow-100 to-orange-100 border-3 border-amber-400 rounded-xl p-5 mb-6 shadow-lg">
-                    <div className="text-center mb-3">
-                      <p className="text-amber-900 text-xl font-black mb-2 flex items-center justify-center gap-2">
-                        <Icon name="Gift" className="w-6 h-6 text-orange-600" />
-                        🎁 ВАШ ИНДИВИДУАЛЬНЫЙ ПРОМОКОД 🎁
-                      </p>
-                      <p className="text-amber-800 text-sm font-semibold">
-                        На БЕСПЛАТНУЮ мини-проверку на верность:
+                  {/* СУПЕР-БЛОК: Получить бесплатную проверку + промокод */}
+                  <div className="bg-gradient-to-br from-yellow-50 via-orange-50 to-red-50 border-4 border-gradient-to-r from-yellow-400 to-red-500 rounded-2xl p-6 mb-6 shadow-2xl relative overflow-hidden">
+                    {/* Декоративные элементы */}
+                    <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500"></div>
+                    <div className="absolute bottom-0 left-0 w-full h-2 bg-gradient-to-r from-red-500 via-orange-500 to-yellow-400"></div>
+                    
+                    {/* Заголовок */}
+                    <div className="text-center mb-6">
+                      <div className="bg-gradient-to-r from-red-500 to-pink-600 text-white px-8 py-4 rounded-2xl mx-auto inline-block shadow-lg transform -rotate-1 hover:rotate-0 transition-all duration-300">
+                        <h3 className="text-2xl font-black flex items-center justify-center gap-3">
+                          <Icon name="Gift" className="w-8 h-8" />
+                          🚀 ПОЛУЧИ БЕСПЛАТНУЮ ПРОВЕРКУ ПРЯМО СЕЙЧАС! 🚀
+                          <Icon name="Heart" className="w-8 h-8" />
+                        </h3>
+                      </div>
+                      <p className="text-red-600 text-lg font-bold mt-4 animate-pulse">
+                        ⏰ Ограниченное предложение! Только сегодня!
                       </p>
                     </div>
-                    <div className="bg-white border-4 border-dashed border-orange-400 rounded-lg p-4 text-center">
-                      <div className="bg-gradient-to-r from-orange-400 to-red-500 text-white px-6 py-3 rounded-lg font-mono text-2xl font-black tracking-wider shadow-lg">
-                        {reportData.promoCode}
+
+                    {/* Блок с промокодом - сразу бросается в глаза */}
+                    <div className="bg-white border-4 border-dashed border-orange-500 rounded-xl p-6 mb-6 shadow-xl relative">
+                      <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg">
+                        ВАШ ЛИЧНЫЙ ПРОМОКОД
                       </div>
-                      <p className="text-orange-700 text-sm font-bold mt-3">
-                        ✅ Укажи этот промокод при обращении в ВК!
-                      </p>
+                      <div className="text-center pt-4">
+                        <div className="bg-gradient-to-r from-orange-500 to-red-600 text-white px-8 py-4 rounded-2xl font-mono text-3xl font-black tracking-widest shadow-2xl transform hover:scale-105 transition-all duration-300 border-4 border-white">
+                          {reportData.promoCode}
+                        </div>
+                        <p className="text-orange-800 text-base font-bold mt-4 flex items-center justify-center gap-2">
+                          <Icon name="Check" className="w-5 h-5 text-green-600" />
+                          Промокод активирован специально для ВАС!
+                          <Icon name="Check" className="w-5 h-5 text-green-600" />
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Инструкция - пошагово и понятно */}
+                    <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border-3 border-blue-400 rounded-xl p-5 mb-6">
+                      <h4 className="text-blue-900 text-xl font-black text-center mb-4 flex items-center justify-center gap-2">
+                        <Icon name="MessageCircle" className="w-6 h-6" />
+                        📝 КАК ПОЛУЧИТЬ: 3 ПРОСТЫХ ШАГА
+                      </h4>
+                      
+                      <div className="space-y-4">
+                        <div className="bg-white rounded-lg p-4 border-l-4 border-green-500 shadow-md">
+                          <div className="flex items-start gap-3">
+                            <div className="bg-green-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-lg">1</div>
+                            <div>
+                              <p className="font-bold text-green-800">Выбери 2 любые услуги из списка выше</p>
+                              <p className="text-green-700 text-sm">Например: №3 (проверка соцсетей) + №7 (анализ активности)</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div className="bg-white rounded-lg p-4 border-l-4 border-blue-500 shadow-md">
+                          <div className="flex items-start gap-3">
+                            <div className="bg-blue-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-lg">2</div>
+                            <div>
+                              <p className="font-bold text-blue-800">Напиши нам в ВК сообщество</p>
+                              <div className="bg-yellow-100 border-2 border-yellow-400 rounded-lg p-3 mt-2">
+                                <p className="text-blue-900 font-semibold text-center">
+                                  <span className="bg-yellow-300 px-2 py-1 rounded font-mono">
+                                    "Привет! Хочу мини-проверку: услуги №3,7 + промокод {reportData.promoCode}"
+                                  </span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div className="bg-white rounded-lg p-4 border-l-4 border-purple-500 shadow-md">
+                          <div className="flex items-start gap-3">
+                            <div className="bg-purple-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-lg">3</div>
+                            <div>
+                              <p className="font-bold text-purple-800">Получи результат за 15 минут!</p>
+                              <p className="text-purple-700 text-sm">Полностью бесплатно и конфиденциально ✨</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Преимущества */}
+                    <div className="bg-gradient-to-r from-green-100 to-emerald-100 border-3 border-green-400 rounded-xl p-4 mb-6">
+                      <h4 className="text-green-900 font-black text-center mb-3 flex items-center justify-center gap-2">
+                        <Icon name="Shield" className="w-5 h-5" />
+                        💎 ПОЧЕМУ ВЫБИРАЮТ НАС:
+                      </h4>
+                      <div className="grid grid-cols-2 gap-3 text-sm">
+                        <div className="text-center">
+                          <div className="text-2xl mb-1">⚡</div>
+                          <p className="font-bold text-green-800">Быстро</p>
+                          <p className="text-green-700 text-xs">За 15 минут</p>
+                        </div>
+                        <div className="text-center">
+                          <div className="text-2xl mb-1">🔒</div>
+                          <p className="font-bold text-green-800">Конфиденциально</p>
+                          <p className="text-green-700 text-xs">100% тайна</p>
+                        </div>
+                        <div className="text-center">
+                          <div className="text-2xl mb-1">💰</div>
+                          <p className="font-bold text-green-800">Бесплатно</p>
+                          <p className="text-green-700 text-xs">Никаких доплат</p>
+                        </div>
+                        <div className="text-center">
+                          <div className="text-2xl mb-1">✅</div>
+                          <p className="font-bold text-green-800">Точно</p>
+                          <p className="text-green-700 text-xs">Проверенные методы</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                   
