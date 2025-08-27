@@ -283,11 +283,32 @@ const Index = () => {
                       📩 КАК ПОЛУЧИТЬ БЕСПЛАТНУЮ МИНИ-ПРОВЕРКУ:
                     </p>
                     <p className="text-orange-900 text-base font-semibold text-center">
-                      Напиши нам: <span className="bg-yellow-200 px-2 py-1 rounded font-mono">"Привет! Хочу мини-проверку: услуги №3,5"</span>
+                      Напиши нам в сообществе ВК: <span className="bg-yellow-200 px-2 py-1 rounded font-mono">"Привет! Хочу мини-проверку: услуги №3,5"</span>
                     </p>
                     <p className="text-orange-700 text-sm text-center mt-2">
                       Просто укажи номера любых 2-х услуг из списка выше и мы проведем проверку бесплатно!
                     </p>
+                  </div>
+                  
+                  {/* Блок с индивидуальным промокодом */}
+                  <div className="bg-gradient-to-r from-green-100 via-yellow-100 to-orange-100 border-3 border-amber-400 rounded-xl p-5 mb-6 shadow-lg">
+                    <div className="text-center mb-3">
+                      <p className="text-amber-900 text-xl font-black mb-2 flex items-center justify-center gap-2">
+                        <Icon name="Gift" className="w-6 h-6 text-orange-600" />
+                        🎁 ВАШ ИНДИВИДУАЛЬНЫЙ ПРОМОКОД 🎁
+                      </p>
+                      <p className="text-amber-800 text-sm font-semibold">
+                        На БЕСПЛАТНУЮ мини-проверку на верность:
+                      </p>
+                    </div>
+                    <div className="bg-white border-4 border-dashed border-orange-400 rounded-lg p-4 text-center">
+                      <div className="bg-gradient-to-r from-orange-400 to-red-500 text-white px-6 py-3 rounded-lg font-mono text-2xl font-black tracking-wider shadow-lg">
+                        {reportData.promoCode}
+                      </div>
+                      <p className="text-orange-700 text-sm font-bold mt-3">
+                        ✅ Укажи этот промокод при обращении в ВК!
+                      </p>
+                    </div>
                   </div>
                   
                   {/* Яркая привлекательная кнопка-ссылка */}
@@ -333,7 +354,7 @@ const Index = () => {
                       </a>
                     </div>
                     <p className="text-sm text-gray-600 font-medium text-center pt-2">
-                      ⭐ Более 10,000 довольных клиентов уже узнали правду!
+                      ⭐ Уже более 1,000 довольных клиентов узнали правду!
                     </p>
                   </div>
                 </div>
